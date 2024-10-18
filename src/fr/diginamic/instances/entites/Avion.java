@@ -31,10 +31,18 @@ public class Avion {
         return modele;
     }
 
-    public void getTabPassagers() {
+    public void showTabPassagers() {
         for (Passager p : this.tabPassagers){
             System.out.println("["+p.nom+", "+p.prenom+", "+p.numSiege+"]");
         }
+    }
+
+    public int getNbPassagers(){
+        return this.tabPassagers.size();
+    }
+
+    public ArrayList<Passager> getTabPassagers() {
+        return tabPassagers;
     }
 
     public Pilote getPilote() {
@@ -46,4 +54,7 @@ public class Avion {
     }
 
 
+    public void setTabPassagers(ArrayList<Passager> tabPassagers) {
+        this.tabPassagers =tabPassagers;
+    }
 }

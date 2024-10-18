@@ -2,9 +2,6 @@ package fr.diginamic.instances;
 
 import fr.diginamic.instances.entites.Avion;
 import fr.diginamic.instances.entites.Passager;
-import fr.diginamic.instances.entites.Pilote;
-
-import java.util.Date;
 
 public class TestAvion {
     public static void main(String[] args) {
@@ -15,7 +12,7 @@ public class TestAvion {
 
         avion1.ajoutPassagers(p1);
 
-        avion1.getTabPassagers();
+        avion1.showTabPassagers();
 
     }
 }
