@@ -2,18 +2,17 @@ package fr.diginamic.banque;
 
 public class CompteTaux extends Compte{
 
-    public int tauxDeRemuneration;
+    private double taux;
 
-    public CompteTaux(int numCompte, int soldeCompte, int tauxDeRemuneration) {
-        super(numCompte, soldeCompte);
-        this.tauxDeRemuneration=tauxDeRemuneration;
+    public CompteTaux(int num, int solde, double taux) {
+        super(num, solde);
+        this.taux=taux;
 
     }
 
     @Override
     public String toString() {
-        return super.toString()+"CompteTaux{" +
-                "tauxDeRemuneration=" + tauxDeRemuneration +
-                '}';
+        return super.toString()+", " +
+                "tauxDeRemuneration=" + taux ;
     }
 }

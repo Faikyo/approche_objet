@@ -2,31 +2,29 @@ package fr.diginamic.banque;
 
 public class Compte {
 
-    private int numCompte ;
-    private int soldeCompte;
+    private int num ;
+    private double solde;
 
     Compte(int numCompte, int soldeCompte) {
-        this.numCompte = numCompte;
-        this.soldeCompte = soldeCompte;
+        this.num = numCompte;
+        this.solde = soldeCompte;
     }
 
     public int getNumCompte() {
-        return numCompte;
+        return num;
     }
 
-    public int getSoldeCompte() {
-        return soldeCompte;
+    public double getSoldeCompte() {
+        return solde;
     }
 
     public void setSoldeCompte(int soldeCompte) {
-        this.soldeCompte = soldeCompte;
+        this.solde = soldeCompte;
     }
 
     @Override
     public String toString() {
-        return "Compte{" +
-                "numCompte=" + numCompte +
-                ", soldeCompte=" + soldeCompte +
-                '}';
+        return "numCompte=" + num +
+                ", soldeCompte=" + solde;
     }
 }
