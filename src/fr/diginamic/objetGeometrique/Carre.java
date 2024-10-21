@@ -2,8 +2,8 @@ package fr.diginamic.objetGeometrique;
 
 public class Carre extends Rectangle{
 
-    public Carre(double longueur, double largeur) {
-        super(longueur, largeur);
+    public Carre(double cote) {
+        super(cote, cote);
     }
 
     @Override

@@ -9,7 +9,7 @@ public class TestObjetGeometrique {
         ObjetGeometrique[] tab = new ObjetGeometrique[4];
 
         tab[0] = new Cercle(4);
-        tab[1] = new Carre( 3,3);
+        tab[1] = new Carre( 3);
         tab[2] = new Sphere(6);
         tab[3] = new Rectangle(2,7);
 
@@ -22,7 +22,7 @@ public class TestObjetGeometrique {
 
         tab3D.add(new Sphere(6));
         //tab3D[0] = new Cercle(4);
-        //tab3D[1] = new Carre( 3,3);
+        //tab3D[1] = new Carre(3);
         //tab3D[3] = new Rectangle(2,7);
 
         for ( Objet3D obj : tab3D){
