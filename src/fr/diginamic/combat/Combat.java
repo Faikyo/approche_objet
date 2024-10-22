@@ -157,14 +157,17 @@ public class Combat {
                 System.out.println("SOIN");
                 personnage.sante+=personnage.inventaire.get(choixPotion).puissance;
                 personnage.utilisationPotion(personnage.inventaire.get(choixPotion));
+                break;
             case "ATTAQUE":
                 System.out.println("ATTAQUE");
                 personnage.force+=personnage.inventaire.get(choixPotion).puissance;
                 personnage.utilisationPotion(personnage.inventaire.get(choixPotion));
+                break;
             case "ROBUSTESSE":
                 System.out.println("ROBUSTESSE");
                 personnage.force+=personnage.inventaire.get(choixPotion).puissance;
                 personnage.utilisationPotion(personnage.inventaire.get(choixPotion));
+                break;
         }
     }
 

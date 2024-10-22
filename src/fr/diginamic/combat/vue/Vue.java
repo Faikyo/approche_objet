@@ -20,11 +20,11 @@ public class Vue {
 
 
     public static void fin(){
-        System.out.println("Vous avez quittez le jeu");
+        System.out.println("Vous avez quittez le jeun\n");
     }
 
     public static void affichagePotion(ArrayList<Potion> inventaire){
-        System.out.println("Vous pouvez consommer 1 des potions que vous possédez");
+        System.out.println("Vous pouvez consommer 1 des potions que vous possédez \n");
         for (int i =0; i<inventaire.size(); i++){
             System.out.println("Choix n°"+i+" "+inventaire.get(i).toString()+"\n");
         }
@@ -34,6 +34,6 @@ public class Vue {
     public static void mort(Personnage p){
 
         System.out.println("Votre personnage est décédé. Il a obtenu le score de "+p.score+" points.\n " +
-                "Veuillez créer un nouveau personnage");
+                "Veuillez créer un nouveau personnage\n");
     }
 }
