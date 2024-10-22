@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class Vue {
 
     public static void affichageMenu(){
-        System.out.println("Bienvenu Aventurier dans ce jeu\n" +
+        System.out.println(
                 "Menu\n" +
                 "1. Créer le personnage\n"+
                 "2. Combattre une créature\n"+
@@ -18,9 +18,6 @@ public class Vue {
                 "5. Sortir\n");
     }
 
-    public static void afficherScore(Personnage p){
-        System.out.println("Le score du personnage est de "+p.score+"\n");
-    }
 
     public static void fin(){
         System.out.println("Vous avez quittez le jeu");
